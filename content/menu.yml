@@ -1,0 +1,19 @@
+- icon: 'mdi-home'
+  title: 'Home'
+  to: '/'
+
+- icon: 'mdi-frequently-asked-questions'
+  title: 'FAQs'
+  to: '/faq'
+  
+- icon: 'mdi-map'
+  title: 'Cross Border Zone'
+  to: '/map'
+
+- icon: 'mdi-clipboard-check'
+  title: 'Permit Application'
+  to: '/permit'
+
+- icon: 'mdi-text-box-multiple-outline'
+  title: 'Public Health Orders'
+  to: '/orders'

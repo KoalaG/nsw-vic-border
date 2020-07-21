@@ -20,12 +20,12 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-content>
+    <v-main>
       <nuxt />
-    </v-content>
+    </v-main>
     
     <v-footer app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>{{ new Date().getFullYear() }} - The information on this site is not a substitute for legal advice.</span>
     </v-footer>
   </v-app>
 </template>
@@ -39,19 +39,29 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-home',
           title: 'Home',
           to: '/'
         },
         {
-          icon: 'mdi-apps',
-          title: 'Border Resident Map',
+          icon: 'mdi-frequently-asked-questions',
+          title: 'FAQs',
+          to: '/faq'
+        },
+        {
+          icon: 'mdi-map',
+          title: 'Cross Border Zone',
           to: '/map'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'FAQs',
-          to: '/faq'
+          icon: 'mdi-clipboard-check',
+          title: 'Permit Application',
+          to: '/permit'
+        },
+        {
+          icon: 'mdi-text-box-multiple-outline',
+          title: 'Public Health Orders',
+          to: '/orders'
         }
       ],
       miniVariant: false,
